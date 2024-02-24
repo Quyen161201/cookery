@@ -1,0 +1,108 @@
+.form-course {
+    border-radius: 12px;
+    background-color: #444444;
+}
+
+.hr-course {
+    padding-bottom: 1.5px;
+}
+
+.icon-check-course {
+    width: 20px;
+    height: 20px;
+    margin-right: 25px;
+}
+
+#checkbox-payment {
+    position: absolute;
+    bottom: 10%;
+    left: 6%;
+}
+
+#btn-payment {
+    position: absolute;
+    bottom: 1%;
+    left: 6%;
+    width: 100px;
+}
+
+.logo {
+    width: 366.2px;
+    height: 82.67px;
+    margin-top: 5px;
+}
+
+.menu {
+    height: 50px;
+    /* position: fixed; */
+    z-index: 1000;
+
+}
+
+.logo_menu {
+    width: 170.9px;
+    height: 43.2px;
+    object-fit: cover;
+}
+
+.link-menu a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #fff;
+
+}
+
+.link-menu a :hover {
+    color: rgb(118, 17, 17);
+
+}
+
+#icon-search {
+    cursor: pointer;
+}
+
+#icon-search :hover {
+    opacity: 0.5;
+
+
+}
+
+.title-banner {
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+    z-index: 100;
+
+
+}
+
+.w-100.image-product {
+    border-radius: 4px;
+
+    object-fit: cover;
+}
+
+.icon-star {
+    width: 16px;
+    height: 16px;
+}
+
+
+.the-chef-image {
+
+    height: 300px;
+    object-fit: cover;
+}
+
+.thechef-info {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    right: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0));
+    z-index: 1000;
+    display: block;
+}

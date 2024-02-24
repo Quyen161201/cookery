@@ -1,0 +1,21 @@
+@font-face {
+    font-family: musan;
+    src: url(./TTF/SVN-MuseoSans-100.ttf);
+}
+
+html {
+
+    font-family: musan;
+    color: white;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
