@@ -52,7 +52,7 @@
 
 }
 
-.link-menu a :hover {
+.link-menu a:hover {
     color: red;
 
 }
@@ -70,8 +70,7 @@
 
 .title-banner {
     position: absolute;
-    bottom: 40%;
-    left: 10%;
+    transform: translate(50px, -500px);
     z-index: 100;
 
 
@@ -114,8 +113,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    transform: translate(0px, -127px);
     width: 100%;
-    bottom: 14px;
+    /* bottom: 14px; */
     background: linear-gradient(to top, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0));
     z-index: 1000;
     display: block;

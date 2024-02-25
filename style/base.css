@@ -3,6 +3,10 @@
     src: url(./TTF/SVN-MuseoSans-100.ttf);
 }
 
+ul {
+    list-style-type: none;
+}
+
 html {
 
     font-family: musan;
@@ -22,4 +26,8 @@ body {
 
 img {
     object-fit: cover;
+}
+
+button {
+    background-color: #EA1f2d;
 }
