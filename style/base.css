@@ -19,3 +19,7 @@ body {
     background-color: black;
     color: white;
 }
+
+img {
+    object-fit: cover;
+}

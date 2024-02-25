@@ -48,14 +48,15 @@
 .link-menu a {
     text-decoration: none;
     font-size: 17px;
-    color: #fff;
+    color: #f5f5f5;
 
 }
 
 .link-menu a :hover {
-    color: rgb(118, 17, 17);
+    color: red;
 
 }
+
 
 #icon-search {
     cursor: pointer;
@@ -92,6 +93,7 @@
 
     height: 300px;
     object-fit: cover;
+    position: relative;
 }
 
 .thechef-info {
@@ -105,4 +107,31 @@
     background: linear-gradient(to top, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0));
     z-index: 1000;
     display: block;
+}
+
+.schedule-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    bottom: 14px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0));
+    z-index: 1000;
+    display: block;
+}
+
+/* swiper */
+.swiper-container {
+    width: 1200px;
+
+}
+
+.swiper-slide {
+    text-align: center;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    max-height: 100%;
 }

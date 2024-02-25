@@ -14,41 +14,47 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script type="text/javascript" src="public/js/all.js"></script>
+
 </head>
 
-<body style="width: 100vw; height: 100vh;background-color: black;">
-    <div class="w-100  m-0 p-0">
+<body style="width: 100vw; height: 100vh;background-color: black;  margin: 0; padding: 0;" class="w-100">
+    <div class="w-100 m-0 p-0">
         <header>
-            <div class="d-flex justify-content-between w-100 menu p-3">
+            <div class="d-flex justify-content-between w-100 menu p-3 ps-5 pe-5">
                 <div>
-                    <img class="logo_menu" src="public/images/LOGO COOKERY-04.png" alt="">
+                    <img class="logo_menu w-100" src="public/images/LOGO COOKERY-04.png" alt="">
 
                 </div>
-                <div class="d-flex justify-content-between link-menu">
-                    <a class="p-3 me-3" href="#">Thành viên</a>
-                    <a class="p-3 me-3" href="#">Các khóa học</a>
-                    <a class="p-3 me-3" href="#">Công thức nấu ăn</a>
-                    <a class="p-3 me-3" href="#">Tin tức</a>
+                <div class="link-menu p-3">
+                    <a class="p-4" href="#">Thành viên</a>
+                    <a class="p-4" href="#">Các khóa học</a>
+                    <a class="p-4" href="#">Công thức nấu ăn</a>
+                    <a class="p-4" href="#">Tin tức</a>
 
                 </div>
-                <div class="pt-3 link-menu d-flex justify-content-between">
+                <div class="pt-3 d-flex justify-content-between">
                     <img class="me-3" src="public/images/icon-timkiem (2)-03.png"
                         style="width: 26px; height: 26px; cursor: pointer;" alt="">
                     <div id="icon-search" class="me-3 mt-1"
                         style="border-left: 1px solid #fff; height: 20px; width: 1px; opacity: 0.5;">
                     </div>
-                    <a class="pe-3 " href="#">Đăng nhập</a>
-                    <a class="pe-3 " href="#">Đăng Ký</a>
+                    <div class="link-menu">
+                        <a class="pe-3 " href="#">Đăng nhập</a>
+                        <a class="pe-3 " href="#">Đăng Ký</a>
+                    </div>
 
                 </div>
 
             </div>
         </header>
 
-        <main class="w-100 mt-4 ">
+        <main class="w-100 mt-4 ps-2">
             <div id="banner">
-                <div class="w-100 position-relative">
-                    <img src="public/images/baner.jpg" alt="" class="w-100" style="height: 638px;object-fit: cover;">
+                <div class="w-100 ">
+                    <img src="public/images/baner.jpg" alt="" class="w-100 position-relative"
+                        style="height: 638px;object-fit: cover;">
                 </div>
                 <div class="title-banner">
                     <h1 class="text-white">Nâng tầm </h1>
@@ -254,13 +260,11 @@
                         <button class="btn btn-danger mb-5" type="button">Xem thêm</button>
                         <p class="fs-2 text-white">Các khóa học nổi bật</p>
                     </div>
-
-                    <div class="container">
-                        <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-sm-3 row-cols-xs-1  ps-4 pb-5">
-
-
-                            <div class="col">
-                                <div class=" position-relative">
+                    <div class="swiper-container pb-4">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide">
+                                <div>
                                     <img src="public/images/chef-Hà.jpg" class="the-chef-image">
                                     <div class="thechef-info d-flex flex-column align-items-center">
                                         <button type="button" class="btn btn-danger">15 bài học</button>
@@ -271,10 +275,10 @@
                                 </div>
 
                             </div>
-                            <div class="col">
-                                <div class=" position-relative">
+                            <div class="swiper-slide">
+                                <div>
                                     <img src="public/images/chef-Hà.jpg" class="the-chef-image">
-                                    <div class="thechef-info d-flex  align-items-center  ">
+                                    <div class="thechef-info d-flex flex-column align-items-center">
                                         <button type="button" class="btn btn-danger">15 bài học</button>
                                         <p class="text-white mt-2">Dạy nấu ăn I: Kỹ năng nấu ăn</p>
                                         <p class="text-white">Christine Hà</p>
@@ -283,10 +287,10 @@
                                 </div>
 
                             </div>
-                            <div class="col">
-                                <div class=" position-relative">
+                            <div class="swiper-slide">
+                                <div>
                                     <img src="public/images/chef-Hà.jpg" class="the-chef-image">
-                                    <div class="thechef-info d-flex  flex-column align-items-center p-0 w-100 ">
+                                    <div class="thechef-info d-flex flex-column align-items-center">
                                         <button type="button" class="btn btn-danger">15 bài học</button>
                                         <p class="text-white mt-2">Dạy nấu ăn I: Kỹ năng nấu ăn</p>
                                         <p class="text-white">Christine Hà</p>
@@ -295,10 +299,10 @@
                                 </div>
 
                             </div>
-                            <div class="col">
-                                <div class=" position-relative">
+                            <div class="swiper-slide">
+                                <div>
                                     <img src="public/images/chef-Hà.jpg" class="the-chef-image">
-                                    <div class="thechef-info d-flex  flex-column align-items-center p-0 w-100 ">
+                                    <div class="thechef-info d-flex flex-column align-items-center">
                                         <button type="button" class="btn btn-danger">15 bài học</button>
                                         <p class="text-white mt-2">Dạy nấu ăn I: Kỹ năng nấu ăn</p>
                                         <p class="text-white">Christine Hà</p>
@@ -307,10 +311,10 @@
                                 </div>
 
                             </div>
-                            <div class="col">
-                                <div class=" position-relative">
+                            <div class="swiper-slide">
+                                <div>
                                     <img src="public/images/chef-Hà.jpg" class="the-chef-image">
-                                    <div class="thechef-info d-flex  flex-column align-items-center p-0 w-100 ">
+                                    <div class="thechef-info d-flex flex-column align-items-center">
                                         <button type="button" class="btn btn-danger">15 bài học</button>
                                         <p class="text-white mt-2">Dạy nấu ăn I: Kỹ năng nấu ăn</p>
                                         <p class="text-white">Christine Hà</p>
@@ -324,8 +328,411 @@
                     </div>
                 </div>
             </div>
+            <div style="background-color: black;" class="w-100 p-5 m-0">
+                <div class="d-flex justify-content-between align-items-center w-100 h-100 bg-white rounded">
+                    <div class="d-flex flex-column w-50 bg-white p-5 align-items-center rounded">
+                        <div>
+                            <h2>Có gì trong hạng thẻ thành viên
+                            </h2>
+                            <h2>Cookery ?</h2>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center pt-3">
+
+                            <button class="btn btn-danger btn-lg me-3" style="width: 14rem; border-radius: 8px;">Đăng
+                                nhập</button>
+                            <button class="btn btn-outline-secondary btn-lg"
+                                style="width: 14rem; border-radius: 8px;">Liên hệ</button>
+
+                        </div>
+
+                    </div>
+                    <div class="w-50 bg-white p-5  rounded">
+                        <div class="d-flex pb-3">
+                            <img src="public/images/hon200-02.png" class="icon-star" alt="">
+                            <h6 class="ps-3">Hơn 200+ lớp học và công thức nấu ăn</h6>
+                        </div>
+                        <div class="d-flex pb-3">
+                            <img src="public/images/vl-02.png" alt="" class="icon-star">
+                            <h6 class="ps-3">Có sub và giọng nói</h6>
+                        </div>
+                        <div class="d-flex pb-3">
+                            <img src="public/images/share-02.png" class="icon-star" alt="">
+                            <h6 class="ps-3">Tải và xem chế độ offline(Từng buổi)</h6>
+                        </div>
+                        <div class="d-flex pb-3">
+                            <img src="public/images/list-02.png" class="icon-star" alt="">
+                            <h6 class="ps-3">Có thể tải công thưc nấu ăn của tất cả lớp</h6>
+                        </div>
+                        <div class="d-flex pb-3">
+                            <img src="public/images/hon200-02.png" class="icon-star" alt="">
+                            <h6 class="ps-3">Xem treen masy tisnh ,TV và điện thoại</h6>
+                        </div>
+                        <div class="d-flex pb-3">
+                            <img src="public/images/sa0-02.png" class="icon-star" alt="">
+                            <h6 class="ps-3">Lớp học mới được thêm mỗi tuần</h6>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="d-flex flex-column align-items-center">
+
+                <p class="text-danger">Trở thành thành viên và trải nghiệm</p>
+                <p class="text-white pb-2" style="font-size: 50px;">Truy cập không giới hạn khóa học với các tư cách
+                    thành viên</p>
+                <button class="btn btn-danger" style="width: 12rem;">Đăng ký thành viên</button>
+                <div class="ps-5 pe-5 pb-5">
+                    <div class="row row-cols-5 pt-5 ps-5 pe-5">
+
+                        <img src="public/images/Rectangle 344.png" class="pb-5"
+                            style="height: 32rem;  object-fit: cover;" alt="">
+                        <img src="public/images/Rectangle 344.png" class="pt-5" style="height: 32rem; object-fit: cover"
+                            alt="">
+                        <img src="public/images/Rectangle 344.png" class="pb-5" style="height: 32rem;object-fit: cover"
+                            alt="">
+                        <img src="public/images/Rectangle 344.png" class="pt-5" style="height:32rem;object-fit: cover"
+                            alt="">
+                        <img src="public/images/Rectangle 344.png" class="pb-5" style="height: 32rem; object-fit: cover"
+                            alt="">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <h2 class="pb-4 text-white">Lịch cập nhật bài học</h2>
+                <div class="container">
+                    <div class="row row-cols-4">
+
+                        <div class="col p-3 position-relative" style="background-color: black;">
+                            <img src="public/images/Rectangle 344.png" style="height: 362px; width: 302px;"
+                                class="position-relative">
+                            <div class="schedule-info d-flex flex-column align-items-center" style="width: 302px;">
+                                <button class=" btn btn-danger ">Tháng 3</button>
+                                <p class=" pt-4 pb-2 text-white">Súp bí đỏ</p>
+
+                                <h6 class="text-muted m-0 pb-3">Rene Oskam</h6>
+
+                            </div>
+                        </div>
+
+                        <div class="col p-3 position-relative" style="background-color: black;">
+                            <img src="public/images/Rectangle 344.png" style="height: 362px; width: 302px;"
+                                class="position-relative">
+                            <div class="schedule-info d-flex flex-column align-items-center" style="width: 302px;">
+                                <button class=" btn btn-danger ">Tháng 3</button>
+                                <p class=" pt-4 pb-2 text-white">Súp bí đỏ</p>
+
+                                <h6 class="text-muted m-0 pb-3">Rene Oskam</h6>
+
+                            </div>
+                        </div>
+                        <div class="col p-3 position-relative" style="background-color: black;">
+                            <img src="public/images/Rectangle 344.png" style="height: 362px; width: 302px;"
+                                class="position-relative">
+                            <div class="schedule-info d-flex flex-column align-items-center" style="width: 302px;">
+                                <button class=" btn btn-danger ">Tháng 3</button>
+                                <p class=" pt-4 pb-2 text-white">Súp bí đỏ</p>
+
+                                <h6 class="text-muted m-0 pb-3">Rene Oskam</h6>
+
+                            </div>
+                        </div>
+                        <div class="col p-3 position-relative" style="background-color: black;">
+                            <img src="public/images/Rectangle 344.png" style="height: 362px; width: 302px;"
+                                class="position-relative">
+                            <div class="schedule-info d-flex flex-column align-items-center" style="width: 302px;">
+                                <button class=" btn btn-danger ">Tháng 3</button>
+                                <p class=" pt-4 pb-2 text-white">Súp bí đỏ</p>
+
+                                <h6 class="text-muted m-0 pb-3">Rene Oskam</h6>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex flex-column align-items-center w-100">
+                <h2 class="text-white">Trải nghiệm học viên...</h2>
+                <div class="w-100 p-5 pt-0" style="background-color: black;">
+                    <div class="row  w-100 p-5">
+                        <div class="col-3" style="background-color: black;">
+                            <div class="bg-white h-100 p-5 rounded">
+                                <div class="d-flex flex-column">
+                                    <img src="public/images/luke-nguye,-02.png" alt="" style="width: 80px;"
+                                        class="pb-3">
+                                    <div class="d-flex pb-3">
+                                        <img src="public/images/icon.-sao-03.png"
+                                            style="width: 20px; height: 20px; margin-right: 5px;" alt="">
+                                        <img src="public/images/icon.-sao-03.png"
+                                            style="width: 20px; height: 20px; margin-right: 5px;" alt="">
+                                        <img src="public/images/icon.-sao-03.png"
+                                            style="width: 20px; height: 20px; margin-right: 5px;" alt="">
+                                        <img src="public/images/icon.-sao-03.png"
+                                            style="width: 20px; height: 20px; margin-right: 5px;" alt="">
+                                        <img src="public/images/icon.-sao-03.png"
+                                            style="width: 20px; height: 20px; margin-right: 5px;" alt="">
+                                    </div>
+                                    <h6>Ấn tượng</h6>
+                                    <div class="pt-5">
+                                        <p>
+                                            Tôi bị ấn tượng bởi những bài thuyết trình điêu luyện của người hướng dẫn -
+                                            sử
+                                            dụng các kỹ thuật hiện đại để biến từng thành phần thành một kiệt tác không
+                                            giống ai. Điều này được thực hiện một cách thuyết phục, có tổ chức mà không
+                                            hề
+                                            giả tạo hay rườm rà không cần thiết. Tất cả các ý tưởng tuy kiêu kỳ và sáng
+                                            tạo
+                                            nhưng vẫn duy trì một chân vững chắc giữa truyền thống và thực tế.
+                                        </p>
+                                        <h6 class="pt-5 pb-5">Đầu bếp Luke Nguyễn</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="d-flex flex-column ">
+                                <div class="w-100 bg-white rounded mb-4 p-5">
+                                    <div class="d-flex" style="padding-left: 30%;">
+                                        <img src="public/images/Ngo-thanh-van-02.png" alt="" style="width: 80px;"
+                                            class="pb-3">
+                                        <div class="d-flex flex-column pt-4 ps-3">
+                                            <div class="d-flex">
+                                                <img src="public/images/icon.-sao-03.png"
+                                                    style="width: 20px; height: 20px; margin-right: 5px;" alt="">
+                                                <img src="public/images/icon.-sao-03.png"
+                                                    style="width: 20px; height: 20px; margin-right: 5px;" alt="">
+                                                <img src="public/images/icon.-sao-03.png"
+                                                    style="width: 20px; height: 20px; margin-right: 5px;" alt="">
+                                                <img src="public/images/icon.-sao-03.png"
+                                                    style="width: 20px; height: 20px; margin-right: 5px;" alt="">
+                                                <img src="public/images/icon.-sao-03.png"
+                                                    style="width: 20px; height: 20px; margin-right: 5px;" alt="">
+                                            </div>
+                                            <h5 class="pt-2">Yêu thích Cookery</h5>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <p>Nội dung đa dạng được giảng dạy bởi một số đầu bếp rất nổi tiếng và
+                                            chuyên
+                                            nghiệp. Các khóa học có cấu trúc rõ ràng và tốt!</p>
+                                        <h6>Diễn viên Bảo Thanh</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex w-100 align-items-center">
+
+                                    <div class="w-50 h-100 bg-white me-4 rounded">
+                                        <div class="bg-white h-100 p-5 rounded">
+                                            <div class="d-flex flex-column">
+                                                <img src="public/images/luke-nguye,-02.png" alt="" style="width: 80px;"
+                                                    class="pb-3">
+                                                <div class="d-flex pb-3">
+                                                    <img src="public/images/icon.-sao-03.png"
+                                                        style="width: 20px; height: 20px; margin-right: 5px;" alt="">
+                                                    <img src="public/images/icon.-sao-03.png"
+                                                        style="width: 20px; height: 20px; margin-right: 5px;" alt="">
+                                                    <img src="public/images/icon.-sao-03.png"
+                                                        style="width: 20px; height: 20px; margin-right: 5px;" alt="">
+                                                    <img src="public/images/icon.-sao-03.png"
+                                                        style="width: 20px; height: 20px; margin-right: 5px;" alt="">
+                                                    <img src="public/images/icon.-sao-03.png"
+                                                        style="width: 20px; height: 20px; margin-right: 5px;" alt="">
+                                                </div>
+                                                <h6>Ấn tượng</h6>
+                                                <div class="pt-5">
+                                                    <p>
+                                                        Tôi bị ấn tượng bởi những bài thuyết trình điêu luyện
+                                                        của người hướng dẫn -
+                                                        sử
+                                                        dụng các kỹ thuật hiện đại để biến từng thành phần thành
+                                                        một kiệt tác không
+                                                        giống ai. Điều này được thực hiện một cách thuyết phục,
+                                                        có tổ chức mà không
+                                                        hề
+                                                        giả tạo hay rườm rà không cần thiết. Tất cả các ý tưởng
+                                                        tuy kiêu kỳ và sáng
+                                                        tạo
+                                                        nhưng vẫn duy trì một chân vững chắc giữa truyền thống
+                                                        và thực tế.
+                                                    </p>
+                                                    <h6 class="pt-5 pb-5">Đầu bếp Luke Nguyễn</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="w-50 h-100 bg-white rounded">
+                                        <div class="bg-white h-100 p-5 rounded">
+                                            <div class="d-flex flex-column">
+                                                <img src="public/images/luke-nguye,-02.png" alt="" style="width: 80px;"
+                                                    class="pb-3">
+                                                <div class="d-flex pb-3">
+                                                    <img src="public/images/icon.-sao-03.png"
+                                                        style="width: 20px; height: 20px; margin-right: 5px;" alt="">
+                                                    <img src="public/images/icon.-sao-03.png"
+                                                        style="width: 20px; height: 20px; margin-right: 5px;" alt="">
+                                                    <img src="public/images/icon.-sao-03.png"
+                                                        style="width: 20px; height: 20px; margin-right: 5px;" alt="">
+                                                    <img src="public/images/icon.-sao-03.png"
+                                                        style="width: 20px; height: 20px; margin-right: 5px;" alt="">
+                                                    <img src="public/images/icon.-sao-03.png"
+                                                        style="width: 20px; height: 20px; margin-right: 5px;" alt="">
+                                                </div>
+                                                <h6>Ấn tượng</h6>
+                                                <div class="pt-5">
+                                                    <p>
+                                                        Tôi bị ấn tượng bởi những bài thuyết trình điêu luyện
+                                                        của người hướng dẫn -
+                                                        sử
+                                                        dụng các kỹ thuật hiện đại để biến từng thành phần thành
+                                                        một kiệt tác không
+                                                        giống ai. Điều này được thực hiện một cách thuyết phục,
+                                                        có tổ chức mà không
+                                                        hề
+                                                        giả tạo hay rườm rà không cần thiết. Tất cả các ý tưởng
+                                                        tuy kiêu kỳ và sáng
+                                                        tạo
+                                                        nhưng vẫn duy trì một chân vững chắc giữa truyền thống
+                                                        và thực tế.
+                                                    </p>
+                                                    <h6 class="pt-5 pb-5">Đầu bếp Luke Nguyễn</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </main>
+        <footer class="py-4 bg-white w-100 ">
+            <div class="d-flex px-5 mt-4 justify-content-between w-100 pb-5">
+                <div class="w-25 ps-4">
+                    <div style="height: 35px;">
+                        <img src="./public/images/LOGO-04.png" alt="" class="h-100">
+                        <img src="./public/images/Cookery -24.png" alt="" class="h-50">
+                    </div>
+
+                    <div class="mt-3">
+                        <span class="text-dark">Lớp dạy nấu ăn trực tuyến thay đổi cuộc sống của bạn. Học theo tốc độ
+                            của
+                            riêng bạn và với mức giá tốt nhất</span>
+                    </div>
+
+                    <div class="social d-flex justify-content-start w-100 mt-5" style="height: 200px;">
+                        <div style="width: 50px; height: 50px; " class="rounded-circle overflow-hidden me-3">
+                            <img src="./public/images/facebook-icon-512x512-seb542ju.png" class="w-100" alt="">
+                        </div>
+                        <div style="width: 50px; height: 50px; " class="rounded-circle overflow-hidden me-3">
+                            <img src="./public/images/apps.60673.9007199266244427.4d45042b-d7a5-4a83-be66-97779553b24d.png"
+                                class="w-100" alt="">
+                        </div>
+                        <div style="width: 50px; height: 50px; " class="rounded-circle overflow-hidden me-3">
+                            <img src="./public/images/Instagram_logo_2022.svg.webp" class="w-100" alt="">
+                        </div>
+                        <div style="width: 50px; height: 50px; " class="rounded-circle overflow-hidden me-3">
+                            <img src="./public/images/tiktok-icon2.png" class="w-100" alt="">
+                        </div>
+                    </div>
+
+                    <div class="copyright text-dark">
+                        <div>© 2024 Cookery. All right reserved</div>
+                        <div>
+                            <a href="" class="text-dark text-decoration-none">Terms of Service </a> | <a href=""
+                                class="text-dark text-decoration-none">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="w-75 pe-4 ps-5 ms-5 ">
+                    <div class="row w-100 ps-5 ms-5">
+                        <div class="col-3">
+                            <div class="text-danger w-100 mb-3">
+                                <h5>Hội viên</h5>
+                            </div>
+                            <ul class="list-group">
+                                <li><a href="" class="text-dark text-decoration-none" style="font-size: 15px;">Hội
+                                        viên</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <div class="text-danger w-100 mb-3">
+                                <h5>Bộ sưu tập</h5>
+                            </div>
+                            <ul class="list-group">
+                                <li><a href="" class="text-dark text-decoration-none" style="font-size: 15px;">Kỹ thuật
+                                        nấu
+                                        ăn</a></li>
+                                <li><a href="" class="text-dark text-decoration-none" style="font-size: 15px;">Kỹ thuật
+                                        làm
+                                        bánh ngọt</a></li>
+                                <li><a href="" class="text-dark text-decoration-none" style="font-size: 15px;">Các món
+                                        ăn
+                                        tốt cho sức khỏe</a></li>
+                                <li><a href="" class="text-dark text-decoration-none" style="font-size: 15px;">Bánh
+                                        ngọt</a>
+                                </li>
+                                <li><a href="" class="text-dark text-decoration-none" style="font-size: 15px;">Các món
+                                        ăn
+                                        ngon cho mỗi ngày</a></li>
+                                <li><a href="" class="text-dark text-decoration-none" style="font-size: 15px;">Các đầu
+                                        bếp
+                                        được gắn sao Michellin</a></li>
+                                <li><a href="" class="text-dark text-decoration-none" style="font-size: 15px;">Bánh mỳ
+                                        sáng
+                                        tạo</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <div class="text-danger w-100 mb-3">
+                                <h5>Q&A</h5>
+                            </div>
+                            <ul class="list-group">
+                                <li><a href="" class="text-dark text-decoration-none" style="font-size: 15px;">Câu hỏi
+                                        thường gặp</a></li>
+
+
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <div class="text-danger w-100 mb-3">
+                                <h5>Cookery</h5>
+                            </div>
+                            <ul class="list-group">
+                                <li><a href="" class="text-dark text-decoration-none" style="font-size: 15px;">Về chúng
+                                        tôi</a></li>
+                                <li><a href="" class="text-dark text-decoration-none" style="font-size: 15px;">Đầu bếp &
+                                        Chuyên gia</a></li>
+                                <li><a href="" class="text-dark text-decoration-none" style="font-size: 15px;">Hoạt động
+                                        xã hội</a></li>
+                                <li><a href="" class="text-dark text-decoration-none" style="font-size: 15px;">Liên hệ
+                                        với chúng tôi</a></li>
+                                <li><a href="" class="text-dark text-decoration-none" style="font-size: 15px;">Cơ hội
+                                        việc làm</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 
 </body>
 
