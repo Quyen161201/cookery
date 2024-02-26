@@ -113,7 +113,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translate(0px, -127px);
+    transform: translate(0px, -125px);
     width: 100%;
     /* bottom: 14px; */
     background: linear-gradient(to top, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0));
