@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi thông tin</title>
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+
+    <style>
+        .error {
+            color: red;
+
+        }
+
+        #error-checkboxRule {
+            border: 1px solid red;
+            padding-left: 20px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .bg-dark {
+            background-color: black !important;
+        }
+
+        .btn-danger {
+            background-color: #ea1f2d !important;
+        }
+    </style>
+</head>
+
+<body style="width: 100vw; height: 100vh; background-color: black;" class="w-100 h-100">
+    <div class="container w-100 h-100">
+        <div class="d-flex justify-content-between w-100 h-100 p-5 bg-dark">
+            <div class="w-50 bg-dark h-100 p-5  text-white">
+                <h2>Liên hệ với chúng tôi</h2>
+                <div class="d-flex">
+                    <p class="me-2">Trải nghiệm ngay ?</p>
+                    <a href="./payment.html" class="text-white">Thanh toán.</a>
+                </div>
+                <h6 class="mt-2">
+                    Tại sao lựa chọn cookery ?
+                </h6>
+                <div class="d-flex flex-column ps-3">
+                    <div class="d-flex">
+                        <img src="public/images/bộ icon-02.png" style="width: 20px; height: 20px; margin-right: 25px;">
+                        <p>Cung cấp cho bạn quyền truy cập vào hơn 200 bài học từ những đầu bếp giỏi nhất Việt Nam có
+                            thể truy cập được từ mọi loại thiết bị.</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="public/images/bộ icon-02.png" style="width: 20px; height: 20px; margin-right: 25px;">
+                        <p>Tổ chức liên kết các buổi học trực tuyến mỗi tháng với các đầu bếp hàng đầu thế giới.</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="public/images/bộ icon-02.png" style="width: 20px; height: 20px; margin-right: 25px;">
+                        <p>
+                            Thực hành tại chỗ cùng giảng viên, chú trọng dạy phương pháp, dinh dưỡng và nâng cao trải
+                            nghiệm với nguyên liệu được chuẩn bị đầy đủ
+                        </p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="public/images/bộ icon-02.png" style="width: 20px; height: 20px; margin-right: 25px;">
+                        <p>
+                            Cơ sở offline xây dựng với đầy đủ thiết bị với không gian thiết kế sang trọng và tinh tế
+                            theo phong cách châu Âu, nhằm tăng trải nghiệm cho khách hàng
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="d-flex w-100 me-5">
+                    <img src="public/images/bộ icon-02-phẩy (1).png" class="mt-2 me-3"
+                        style="width: 45px; height: 40px;">
+                    <p class="mt-3" style="font-weight: 500; font-size: 19px;">
+                        Cookery là sự chọn lựa tuyệt vời với chất lượng dịch vụ tiêu chuẩn châu Âu nhằm đem lại trải
+                        nghiệm cho khách hàng
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="w-50 h-100 p-3">
+                <div class="w-100 bg-white  p-5">
+                    <h5>
+                        Điền thông tin theo form dưới. Cookey sẽ liên hệ với bạn ngay.
+                    </h5>
+                    <form method="get" action="" id="registerForm">
+                        <div class="d-flex flex-column">
+                            <div class="form-group mt-3">
+                                <span class="fs-6" style="font-weight: 600;">Họ và tên</span>
+                                <input type="text" name="name" class="form-control" id="name">
+                                <span></span>
+                            </div>
+                            <div class="form-group mt-3">
+                                <span class=" fs-6" style="font-weight: 600;">Địa chỉ Email</span>
+                                <input type="text" name="email" class="form-control">
+                            </div>
+                            <div class="form-group mt-3">
+                                <span class=" fs-6" style="font-weight: 600;">Số điện thoại </span>
+                                <input type="text" class="form-control" name="phone">
+                            </div>
+                            <div class="form-group mt-3">
+                                <span class=" fs-6" style="font-weight: 600;">Nơi ở hiện này</span>
+                                <input type="text" class="form-control" name="address">
+                            </div>
+                            <div class="form-group mt-3">
+                                <span class=" fs-6" style="font-weight: 600;">Thời gian tư vấn</span>
+                                <select class="form-select" aria-label="Default select example" name="select-time">
+                                    <option selected></option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="form-check mt-3">
+
+                                <label class="form-check-label fs-5 " style="font-weight: 600;" for="flexCheckDefault">
+                                    Nhận thông tin cập nhật trên Cookery
+                                </label>
+                                <input class="form-check-input mt-2" type="checkbox" value="" checked>
+                            </div>
+                            <div>
+                                <p class="text-muted mt-3">Thông tin của bạn sẽ được sử dụng để xem xét và
+                                    thực hiện yêu cầu của bạn
+                                    và sẽ được xử lý
+                                    theo chính sách quyền riêng tư của chúng tôi.</p>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-danger w-100" style="font-weight: 600;"
+                                    id="register">Thanh toán</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <script src="jquery-3.7.1.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script>
+            $().ready(function () {
+                $("#registerForm").validate({
+                    onfocusout: false,
+                    onkeyup: false,
+                    onclick: false,
+                    onchange: true,
+                    rules: {
+                        "name": {
+                            required: true,
+                            maxlength: 15
+                        },
+                        "email": {
+                            required: true,
+                            email: true
+                        },
+                        "phone": {
+                            required: true,
+                            maxlength: 12,
+                            minlength: 10
+                        },
+                        "address": {
+                            required: true,
+                            regex: /^[a-zA-Z0-9-\/] ?([a-zA-Z0-9-\/]|[a-zA-Z0-9-\/] )*[a-zA-Z0-9-\/]$/
+                        },
+                        "select-time": {
+                            required: true
+                        },
+                        "checkboxRule": {
+                            required: true
+                        }
+
+                    },
+                    messages: {
+                        "name": {
+                            required: "Bạn chưa nhập Họ và tên",
+                            maxlength: "Hãy nhập tối đa 15 ký tự"
+                        },
+                        "email": {
+                            required: "Bạn chưa nhập email",
+                            email: "Hãy nhập đúng định dạng email"
+                        },
+                        "phone": {
+                            required: "Bạn chưa nhập số điện thoại",
+                            maxlength: "Số điện thoại không quá 12 ký tự",
+                            minlength: "Số điện thoại phải từ 10 ký tự"
+
+                        },
+                        "address": {
+                            required: "Bạn chưa nhập địa chỉ",
+                        },
+                        "select-time": {
+                            required: "Bạn chưa cập nhật thời gian",
+                        },
+                        "checkboxRule": {
+                            required: "<div class='test'>Bạn chưa đồng ý nhận thông tin</div>"
+                        }
+
+                    },
+                    submitHandler: function (form) {
+                        // your code here
+                        console.log("Hello...");
+                        // window.location.href = "./home.html";
+                        form.submit(); // default form submit
+                    }
+
+                });
+            });
+
+
+        </script>
+</body>
+
+</html>

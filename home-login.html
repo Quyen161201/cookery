@@ -41,38 +41,101 @@
 
 <body style="width: 100vw; height: 100vh;background-color: black;  margin: 0; padding: 0;" class="w-100">
     <div class="w-100 m-0 p-0 ">
-        <header>
-            <div class="d-flex justify-content-between align-items-center w-100 menu m-0 p-3  pt-5">
-                <div>
-                    <a href="home.html">
-                        <img class=" logo_menu w-100" src="public/images/LOGO COOKERY-04.png" alt="">
-                    </a>
+        <header style="height: 80px;" class="d-flex justify-content-between bg-dark  position-relative">
+            <div class="h-100 d-flex align-items-center ps-2">
+                <a href="./home.html" class="d-block h-75 "><img src="./public/images/LOGO COOKERY-04.png" alt=""
+                        class="h-100"></a>
+            </div>
+            <nav class="navbar navbar-expand-lg ">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-white" aria-current="page" href="#">Thành viên</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-white" href="#">Các khóa học</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-white" href="#">Công thức nấu ăn</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-white" href="#">Tin tức</a>
+                        </li>
 
+                    </ul>
                 </div>
-                <div class="link-menu p-3 ">
-                    <a class="p-4" href="#">Thành viên</a>
-                    <a class="p-4" href="./course.html">Các khóa học</a>
-                    <a class="p-4" href="#">Công thức nấu ăn</a>
-                    <a class="p-4" href="#">Tin tức</a>
 
-                </div>
-                <div class="pt-3 d-flex justify-content-between">
-                    <img class="me-3" src="public/images/icon-timkiem (2)-03.png"
-                        style="width: 26px; height: 26px; cursor: pointer;" alt="">
-                    <div id="icon-search" class="me-3 mt-1"
-                        style="border-left: 1px solid #fff; height: 20px; width: 1px; opacity: 0.5;">
+            </nav>
+            <div class="account h-100 pe-5">
+                <div class="search h-100 d-flex align-items-center ">
+                    <div class="h-50 pe-5 border-end " style="border-color: #ffffff75 !important;">
+                        <img src="./public/images/icon-timkiem (2)-03.png" class="h-100" alt="">
                     </div>
-                    <div class="link-menu pb-3">
-                        <a class="pe-3 " href="./login.html">Đăng nhập</a>
-                        <a class="pe-3 " href="./register.html">Đăng Ký</a>
+                    <div class="ps-5 h-100 ">
+                        <button class="d-block btn h-100 d-flex justify-content-start align-items-center btn-account"
+                            style="outline: none;">
+                            <div class="name text-white pe-3">
+                                Khánh Duy
+                            </div>
+                            <div class="h-75 d-flex align-items-center">
+                                <img src="./public/images/bộ icon (5)-02.png" class="h-50" alt="">
+                            </div>
+                        </button>
+
+
                     </div>
 
                 </div>
+            </div>
+
+            <div class="frame-account position-absolute bg-white overflow-hidden "
+                style="height: 615px; width: 500px;right: 3rem; top: 100%;border-radius: 8px;display: none;z-index: 10000;">
+                <div class="position-relative h-25 w-100 text-center" style="background-color: #ea1f2d; ">
+                    <h5 class="pt-3 text-white">Cá nhân</h5>
+                </div>
+                <div style="height: 156px; width: 172px;left: 50%;transform: translate(-50%, -50%); top:25% "
+                    class="position-absolute">
+                    <img src="./public/images/icon3...-04.png" class="h-100" alt="">
+                </div>
+                <div class=" text-dark" style="margin-top: 95px;">
+                    <div class="text-center">
+                        <h2>Khánh Duy</h2>
+                        <span>dokhanhduy38@gmail.com</span>
+                    </div>
+
+                    <div class="w-100 d-flex justify-content-center mt-5">
+                        <div class="w-75 border d-flex justify-content-center align-items-center"
+                            style="height: 45px;;">
+                            <h4 style="color: #ea1f2d;">Quản lý tài khoản của bạn</h4>
+                        </div>
+                    </div>
+
+                    <div class="p-3">
+                        <ul class="mt-3">
+                            <li class="mb-3"><a href="" class="text-decoration-none text-dark">Chính sách quyền riêng
+                                    tư</a>
+                            </li>
+                            <li class="mb-3"><a href="" class="text-decoration-none text-dark">Điều khoản dịch vụ</a>
+                            </li>
+                            <li class="mb-3"><a href="" class="text-decoration-none text-dark">Thanh toán</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex justify-content-end px-3 mt-3">
+                        <a href="./login.html"><button class="btn text-white px-3"
+                                style="background-color: #ea1f2d;"><img src="/public/images/icon2...-04.png"
+                                    class="me-2" height="20px" alt="">Đăng
+                                xuất</button></a>
+                    </div>
+
+
+                </div>
+
 
             </div>
         </header>
 
-        <main class="w-100 mt-4 ps-2">
+        <main class="w-100 ps-2">
             <div id="banner ">
                 <div class="w-100 ">
                     <img src="public/images/baner.jpg" alt="" class="w-100 position-relative"
@@ -756,7 +819,22 @@
             </div>
         </footer>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script>
+        "use strict";
+        (function ($) {
+            $(document).ready(function () {
+                $('.btn-account').on('click', function (e) {
+                    $('.frame-account').toggle('fast')
+
+                })
+
+            })
+
+        })(jQuery);
+
+    </script>
 
 </body>
 
