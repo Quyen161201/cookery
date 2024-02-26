@@ -36,6 +36,11 @@
             font-size: 17px;
         }
 
+        .nav-item a:hover {
+            color: #ea1f2d !important;
+
+        }
+
         li {
             padding-right: 12px;
         }
@@ -57,13 +62,13 @@
                         <a class="nav-link text-white" aria-current="page" href="#">Thành viên</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link text-white" href=".">Các khóa học</a>
+                        <a class="nav-link text-white" href="#">Các khóa học</a>
                     </li>
                     <li class="nav-item px-2">
                         <a class="nav-link text-white" href="#">Công thức nấu ăn</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link text-white" href="#">Tin tức</a>
+                        <a class="nav-link text-white" href="./news.html">Tin tức</a>
                     </li>
 
                 </ul>
@@ -204,410 +209,445 @@
                     </select>
                 </div>
             </nav>
-            <div class="col-9">
+            <div class="col-9 align-items-center justify-content-center d-flex flex-column">
+                <div>
+                    <ul class="d-flex flex-row-reverse m-0">
+                        <li class="d-flex align-items-center pb-5 pe-0">
+                            <div class="w-100 border border-1 p-2"
+                                style="border-top-left-radius: 3px; border-bottom-left-radius: 3px;">
+                                <img src="public/images/icon-chunhat-02.png" style="height: 18px;" class="ps-2 pe-2"
+                                    alt="">
+                            </div>
+                            <div class="w-100 border border-1 p-2"
+                                style="border-top-right-radius: 3px; border-bottom-right-radius: 3px;">
+                                <img src="public/images/icon-vuong-02.png" style="height: 18px;" class="ps-2 pe-2"
+                                    alt="">
+                            </div>
 
-                <ul class="d-flex flex-row-reverse m-0">
-                    <li class="d-flex align-items-center pb-5 pe-0">
-                        <div class="w-100 border border-1 p-2"
-                            style="border-top-left-radius: 3px; border-bottom-left-radius: 3px;">
-                            <img src="public/images/icon-chunhat-02.png" style="height: 18px;" class="ps-2 pe-2" alt="">
+
+                        </li>
+                        <li>
+                            <select class="form-select pt-2 pe-5 pb-2" aria-label=".form-select-sm example">
+                                <option selected>Lọc theo độ khó</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select class="form-select pt-2 pe-5 pb-2" aria-label=".form-select-sm example">
+                                <option selected>Lọc theo danh mục</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select class="form-select pt-2 pe-5 pb-2" aria-label=".form-select-sm example">
+                                <option selected>Phổ biến</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <div class="row row-cols-3 ps-5 ">
+                        <div class=" pe-2 pb-5">
+                            <div class="col bg-white p-0"
+                                style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
+                                <div>
+                                    <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
+                                    <div class="p-3">
+                                        <div class="d-flex w-100 " style="height: 24px;">
+                                            <div class="me-2">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                            </div>
+                                            <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
+                                            </p>
+
+                                        </div>
+                                        <div>
+                                            <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="public/images/icon-02.png" alt="" class="icon-star">
+                                            <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="w-100 border border-1 p-2"
-                            style="border-top-right-radius: 3px; border-bottom-right-radius: 3px;">
-                            <img src="public/images/icon-vuong-02.png" style="height: 18px;" class="ps-2 pe-2" alt="">
+                        <div class=" pe-2 pb-5">
+                            <div class="col bg-white p-0"
+                                style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
+                                <div>
+                                    <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
+                                    <div class="p-3">
+                                        <div class="d-flex w-100 " style="height: 24px;">
+                                            <div class="me-2">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                            </div>
+                                            <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
+                                            </p>
+
+                                        </div>
+                                        <div>
+                                            <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="public/images/icon-02.png" alt="" class="icon-star">
+                                            <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" pe-2 pb-5">
+                            <div class="col bg-white p-0"
+                                style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
+                                <div>
+                                    <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
+                                    <div class="p-3">
+                                        <div class="d-flex w-100 " style="height: 24px;">
+                                            <div class="me-2">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                            </div>
+                                            <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
+                                            </p>
+
+                                        </div>
+                                        <div>
+                                            <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="public/images/icon-02.png" alt="" class="icon-star">
+                                            <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" pe-2 pb-5">
+                            <div class="col bg-white p-0"
+                                style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
+                                <div>
+                                    <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
+                                    <div class="p-3">
+                                        <div class="d-flex w-100 " style="height: 24px;">
+                                            <div class="me-2">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                            </div>
+                                            <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
+                                            </p>
+
+                                        </div>
+                                        <div>
+                                            <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="public/images/icon-02.png" alt="" class="icon-star">
+                                            <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" pe-2 pb-5">
+                            <div class="col bg-white p-0"
+                                style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
+                                <div>
+                                    <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
+                                    <div class="p-3">
+                                        <div class="d-flex w-100 " style="height: 24px;">
+                                            <div class="me-2">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                            </div>
+                                            <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
+                                            </p>
+
+                                        </div>
+                                        <div>
+                                            <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="public/images/icon-02.png" alt="" class="icon-star">
+                                            <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" pe-2 pb-5">
+                            <div class="col bg-white p-0"
+                                style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
+                                <div>
+                                    <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
+                                    <div class="p-3">
+                                        <div class="d-flex w-100 " style="height: 24px;">
+                                            <div class="me-2">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                            </div>
+                                            <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
+                                            </p>
+
+                                        </div>
+                                        <div>
+                                            <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="public/images/icon-02.png" alt="" class="icon-star">
+                                            <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" pe-2 pb-5">
+                            <div class="col bg-white p-0"
+                                style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
+                                <div>
+                                    <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
+                                    <div class="p-3">
+                                        <div class="d-flex w-100 " style="height: 24px;">
+                                            <div class="me-2">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                            </div>
+                                            <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
+                                            </p>
+
+                                        </div>
+                                        <div>
+                                            <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="public/images/icon-02.png" alt="" class="icon-star">
+                                            <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" pe-2 pb-5">
+                            <div class="col bg-white p-0"
+                                style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
+                                <div>
+                                    <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
+                                    <div class="p-3">
+                                        <div class="d-flex w-100 " style="height: 24px;">
+                                            <div class="me-2">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                            </div>
+                                            <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
+                                            </p>
+
+                                        </div>
+                                        <div>
+                                            <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="public/images/icon-02.png" alt="" class="icon-star">
+                                            <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" pe-2 pb-5">
+                            <div class="col bg-white p-0"
+                                style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
+                                <div>
+                                    <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
+                                    <div class="p-3">
+                                        <div class="d-flex w-100 " style="height: 24px;">
+                                            <div class="me-2">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                            </div>
+                                            <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
+                                            </p>
+
+                                        </div>
+                                        <div>
+                                            <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="public/images/icon-02.png" alt="" class="icon-star">
+                                            <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" pe-2 pb-5">
+                            <div class="col bg-white p-0"
+                                style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
+                                <div>
+                                    <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
+                                    <div class="p-3">
+                                        <div class="d-flex w-100 " style="height: 24px;">
+                                            <div class="me-2">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                            </div>
+                                            <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
+                                            </p>
+
+                                        </div>
+                                        <div>
+                                            <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="public/images/icon-02.png" alt="" class="icon-star">
+                                            <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" pe-2 pb-5">
+                            <div class="col bg-white p-0"
+                                style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
+                                <div>
+                                    <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
+                                    <div class="p-3">
+                                        <div class="d-flex w-100 " style="height: 24px;">
+                                            <div class="me-2">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                            </div>
+                                            <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
+                                            </p>
+
+                                        </div>
+                                        <div>
+                                            <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="public/images/icon-02.png" alt="" class="icon-star">
+                                            <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" pe-2 pb-5">
+                            <div class="col bg-white p-0"
+                                style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
+                                <div>
+                                    <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
+                                    <div class="p-3">
+                                        <div class="d-flex w-100 " style="height: 24px;">
+                                            <div class="me-2">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                                <img src="public/images/icon.-sao-03.png" class="icon-star">
+                                            </div>
+                                            <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
+                                            </p>
+
+                                        </div>
+                                        <div>
+                                            <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="public/images/icon-02.png" alt="" class="icon-star">
+                                            <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
 
-                    </li>
+                    </div>
+                </div>
+                <ul class="d-flex pb-4">
+                    <li><button type="button" class="btn btn-outline-danger" style="border-radius: 8px;">
+                            <p class="m-0 p-1">1</p>
+                        </button></li>
+                    <li><button type="button" class="btn btn-outline-danger" style="border-radius: 8px;">
+                            <p class="m-0 p-1">2</p>
+                        </button></li>
+                    <li><button type="button" class="btn btn-outline-danger" style="border-radius: 8px;">
+                            <p class="m-0 p-1">3</p>
+                        </button></li>
                     <li>
-                        <select class="form-select pt-2 pe-5 pb-2" aria-label=".form-select-sm example">
-                            <option selected>Lọc theo độ khó</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
+                        <p class="text-danger m-0 pt-2 pe-2 ps-2">...</p>
                     </li>
-                    <li>
-                        <select class="form-select pt-2 pe-5 pb-2" aria-label=".form-select-sm example">
-                            <option selected>Lọc theo danh mục</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </li>
-                    <li>
-                        <select class="form-select pt-2 pe-5 pb-2" aria-label=".form-select-sm example">
-                            <option selected>Phổ biến</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
+                    <li><button type="button" class="btn btn-outline-danger" style="border-radius: 8px;">
+                            <p class="m-0 p-1">6</p>
+                        </button></li>
+                    <li class="d-flex align-items-center">
+                        <a href="#"><img src="./public/images/icon-left..-03.png" class="icon-star" alt=""></a>
                     </li>
                 </ul>
-                <div class="row row-cols-3 ps-5 ">
-                    <div class=" pe-2 pb-5">
-                        <div class="col bg-white p-0" style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
-                            <div>
-                                <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
-                                <div class="p-3">
-                                    <div class="d-flex w-100 " style="height: 24px;">
-                                        <div class="me-2">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                        </div>
-                                        <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
-                                        </p>
-
-                                    </div>
-                                    <div>
-                                        <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
-                                    </div>
-                                    <div class="d-flex">
-                                        <img src="public/images/icon-02.png" alt="" class="icon-star">
-                                        <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" pe-2 pb-5">
-                        <div class="col bg-white p-0" style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
-                            <div>
-                                <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
-                                <div class="p-3">
-                                    <div class="d-flex w-100 " style="height: 24px;">
-                                        <div class="me-2">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                        </div>
-                                        <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
-                                        </p>
-
-                                    </div>
-                                    <div>
-                                        <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
-                                    </div>
-                                    <div class="d-flex">
-                                        <img src="public/images/icon-02.png" alt="" class="icon-star">
-                                        <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" pe-2 pb-5">
-                        <div class="col bg-white p-0" style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
-                            <div>
-                                <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
-                                <div class="p-3">
-                                    <div class="d-flex w-100 " style="height: 24px;">
-                                        <div class="me-2">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                        </div>
-                                        <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
-                                        </p>
-
-                                    </div>
-                                    <div>
-                                        <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
-                                    </div>
-                                    <div class="d-flex">
-                                        <img src="public/images/icon-02.png" alt="" class="icon-star">
-                                        <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" pe-2 pb-5">
-                        <div class="col bg-white p-0" style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
-                            <div>
-                                <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
-                                <div class="p-3">
-                                    <div class="d-flex w-100 " style="height: 24px;">
-                                        <div class="me-2">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                        </div>
-                                        <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
-                                        </p>
-
-                                    </div>
-                                    <div>
-                                        <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
-                                    </div>
-                                    <div class="d-flex">
-                                        <img src="public/images/icon-02.png" alt="" class="icon-star">
-                                        <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" pe-2 pb-5">
-                        <div class="col bg-white p-0" style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
-                            <div>
-                                <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
-                                <div class="p-3">
-                                    <div class="d-flex w-100 " style="height: 24px;">
-                                        <div class="me-2">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                        </div>
-                                        <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
-                                        </p>
-
-                                    </div>
-                                    <div>
-                                        <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
-                                    </div>
-                                    <div class="d-flex">
-                                        <img src="public/images/icon-02.png" alt="" class="icon-star">
-                                        <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" pe-2 pb-5">
-                        <div class="col bg-white p-0" style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
-                            <div>
-                                <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
-                                <div class="p-3">
-                                    <div class="d-flex w-100 " style="height: 24px;">
-                                        <div class="me-2">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                        </div>
-                                        <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
-                                        </p>
-
-                                    </div>
-                                    <div>
-                                        <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
-                                    </div>
-                                    <div class="d-flex">
-                                        <img src="public/images/icon-02.png" alt="" class="icon-star">
-                                        <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" pe-2 pb-5">
-                        <div class="col bg-white p-0" style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
-                            <div>
-                                <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
-                                <div class="p-3">
-                                    <div class="d-flex w-100 " style="height: 24px;">
-                                        <div class="me-2">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                        </div>
-                                        <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
-                                        </p>
-
-                                    </div>
-                                    <div>
-                                        <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
-                                    </div>
-                                    <div class="d-flex">
-                                        <img src="public/images/icon-02.png" alt="" class="icon-star">
-                                        <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" pe-2 pb-5">
-                        <div class="col bg-white p-0" style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
-                            <div>
-                                <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
-                                <div class="p-3">
-                                    <div class="d-flex w-100 " style="height: 24px;">
-                                        <div class="me-2">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                        </div>
-                                        <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
-                                        </p>
-
-                                    </div>
-                                    <div>
-                                        <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
-                                    </div>
-                                    <div class="d-flex">
-                                        <img src="public/images/icon-02.png" alt="" class="icon-star">
-                                        <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" pe-2 pb-5">
-                        <div class="col bg-white p-0" style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
-                            <div>
-                                <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
-                                <div class="p-3">
-                                    <div class="d-flex w-100 " style="height: 24px;">
-                                        <div class="me-2">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                        </div>
-                                        <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
-                                        </p>
-
-                                    </div>
-                                    <div>
-                                        <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
-                                    </div>
-                                    <div class="d-flex">
-                                        <img src="public/images/icon-02.png" alt="" class="icon-star">
-                                        <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" pe-2 pb-5">
-                        <div class="col bg-white p-0" style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
-                            <div>
-                                <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
-                                <div class="p-3">
-                                    <div class="d-flex w-100 " style="height: 24px;">
-                                        <div class="me-2">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                        </div>
-                                        <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
-                                        </p>
-
-                                    </div>
-                                    <div>
-                                        <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
-                                    </div>
-                                    <div class="d-flex">
-                                        <img src="public/images/icon-02.png" alt="" class="icon-star">
-                                        <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" pe-2 pb-5">
-                        <div class="col bg-white p-0" style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
-                            <div>
-                                <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
-                                <div class="p-3">
-                                    <div class="d-flex w-100 " style="height: 24px;">
-                                        <div class="me-2">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                        </div>
-                                        <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
-                                        </p>
-
-                                    </div>
-                                    <div>
-                                        <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
-                                    </div>
-                                    <div class="d-flex">
-                                        <img src="public/images/icon-02.png" alt="" class="icon-star">
-                                        <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" pe-2 pb-5">
-                        <div class="col bg-white p-0" style="border-radius: 8px;box-shadow: 0px 1px 1px 1px #dad8d8;">
-                            <div>
-                                <img src="public/images/product-hau.jpg" alt="" class="w-100 image-product">
-                                <div class="p-3">
-                                    <div class="d-flex w-100 " style="height: 24px;">
-                                        <div class="me-2">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                            <img src="public/images/icon.-sao-03.png" class="icon-star">
-                                        </div>
-                                        <p class="text-danger font-weight-bold  p-0" style="margin-top: 1px;">(189)
-                                        </p>
-
-                                    </div>
-                                    <div>
-                                        <h4 class="text-dark">Hàu, khoai mì mignonette</h4>
-                                    </div>
-                                    <div class="d-flex">
-                                        <img src="public/images/icon-02.png" alt="" class="icon-star">
-                                        <h6 class="ps-2 text-muted">Jean-Francois Nulli</h6>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
 
 
             </div>
